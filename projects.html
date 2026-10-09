@@ -38,10 +38,35 @@
     <!-- Main holds the content that is different on each page -->
     <main>
 
-        <!-- Projects section: each project will be its own article -->
+        <!-- Projects section: each project is its own article.
+             The articles use the same box class as the home page, so they line up in rows -->
         <section id="projects">
             <h2>My Projects</h2>
-            <p>Here are some of the projects and assignments I completed in previous semesters.</p>
+            <p>Here are some of the projects I have worked on.</p>
+
+            <!-- Project 1 -->
+            <article class="box">
+                <h3>Enterprise-Simulated Linux Home Lab</h3>
+                <p>A Linux virtual machine set up like a company server, with a static IP, a UFW firewall,
+                    Pi-hole for ad blocking and FileBrowser for private cloud storage.</p>
+                <p><a href="https://github.com/Dev-APkash/Homelab-Infrastructure">View on GitHub</a></p>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="box">
+                <h3>Digital Identity and Forensics Toolkit</h3>
+                <p>A Bash script that runs Sherlock, Holehe and ExifTool together to check a username, an email
+                    and file metadata, then saves the results in one report.</p>
+                <p><a href="https://github.com/Dev-APkash/Digital-Identity-Forensics">View on GitHub</a></p>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="box">
+                <h3>Self-Healing Server Monitor</h3>
+                <p>An n8n workflow that checks my services every 30 minutes, restarts a broken Docker container
+                    over SSH and sends an alert to Discord.</p>
+                <p><a href="https://github.com/Dev-APkash/n8n-self-healing-monitor">View on GitHub</a></p>
+            </article>
         </section>
 
     </main>
