@@ -31,10 +31,38 @@
     <!-- Main holds the content that is different on each page -->
     <main>
 
-        <!-- About section: my photo, introduction and video go here -->
+        <!-- About section: my photo and a short introduction -->
         <section id="about">
             <h2>About Me</h2>
-            <p>Get to know a little more about me, my program and my career goals.</p>
+
+            <!-- figure groups my photo with its caption -->
+            <figure class="profile">
+                <img src="images/profile.jpg" alt="Photo of Aarush Prakash">
+                <figcaption>Aarush Prakash</figcaption>
+            </figure>
+
+            <p>Hi! My name is Aarush Prakash and I am a student in the Technology Management for IT
+                program at Ontario Tech University.</p>
+            <p>My goal is to become a DevOps engineer. I like the idea of connecting the people who build
+                software with the people who run it, and making the process of testing and releasing
+                applications faster and more reliable.</p>
+            <p>Through my program I am learning both the technical side of IT and how technology is managed
+                in an organization. This website is one of my first web projects, built with HTML5 and CSS3.</p>
+
+            <!-- The clear class stops the float of the photo on bigger screens -->
+            <div class="clear"></div>
+        </section>
+
+        <!-- Video section: my short introduction video -->
+        <section id="video">
+            <h2>My Introduction Video</h2>
+
+            <!-- controls shows the play, pause and volume buttons.
+                 poster shows an image before the video starts playing. -->
+            <video controls poster="images/poster.jpg">
+                <source src="video/intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
 
     </main>

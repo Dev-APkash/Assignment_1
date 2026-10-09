@@ -147,6 +147,37 @@ a {
     background-color: #1D3557;
 }
 
+/* ---------- About Me page ---------- */
+
+/* The profile figure holds my photo and its caption */
+.profile {
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+/* Fluid image: width 100% fills the figure, max-width stops it from getting too big */
+.profile img {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid #1D3557;
+    border-radius: 10px;
+}
+
+.profile figcaption {
+    font-weight: bold;
+}
+
+/* Video style from the Week 2 lecture: a navy frame with a shadow around the player.
+   width 100% with a max-width keeps the video fluid on small screens */
+video {
+    width: 100%;
+    max-width: 640px;
+    background-color: #1D3557;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
 /* The clear class stops float so the next element starts on a new line */
 .clear {
     clear: both;
