@@ -178,6 +178,48 @@ video {
     box-shadow: 5px 5px 10px gray;
 }
 
+/* ---------- Contact page ---------- */
+
+/* The form sits in a white box. max-width stops it from getting too wide on big screens */
+form {
+    background-color: white;
+    border: 2px solid #457B9D;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* display: block puts each label on its own line above its box */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Fluid design: width 100% makes each box fill the width of the form */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #457B9D;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* The submit and reset buttons. width: auto stops them from stretching like the other boxes */
+.form-button {
+    width: auto;
+    background-color: #C1121F;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #1D3557;
+}
+
 /* The clear class stops float so the next element starts on a new line */
 .clear {
     clear: both;

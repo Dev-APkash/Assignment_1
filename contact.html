@@ -31,10 +31,56 @@
     <!-- Main holds the content that is different on each page -->
     <main>
 
-        <!-- Contact section: the contact form goes here -->
+        <!-- Contact section: holds the contact form -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Send me your questions, comments and project related queries!</p>
+            <p>Send me your questions, comments and project related queries! All fields are required.</p>
+
+            <!-- The mailto action opens the visitor's email program with the form data in the message.
+                 method="post" sends the data, enctype="text/plain" sends it as normal text. -->
+            <form action="mailto:aarush.prakash@ontariotechu.net" method="post" enctype="text/plain">
+
+                <!-- Each label's "for" matches its input's "id" so screen readers know which label goes with which box -->
+                <!-- required: the form cannot be sent if this box is empty. minlength: at least 2 letters. -->
+                <p>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="First and last name" minlength="2" required>
+                </p>
+
+                <!-- type="email" makes the browser check that the value looks like an email (has an @) -->
+                <p>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </p>
+
+                <!-- type="tel" shows a number keypad on phones.
+                     pattern means: 3 digits, a dash, 3 digits, a dash, 4 digits. title explains the format. -->
+                <p>
+                    <label for="phone">Cell Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="905-555-1234"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the format 905-555-1234" required>
+                </p>
+
+                <!-- textarea allows many lines of text. maxlength stops the message at 500 characters. -->
+                <p>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="6" maxlength="500"
+                        placeholder="Question, comment or query..." required></textarea>
+                </p>
+
+                <!-- type="number" only accepts numbers. min and max are both 4, so 4 is the only correct answer. -->
+                <p>
+                    <label for="robot">What is 2 + 2? (So I know you are not a robot)</label>
+                    <input type="number" id="robot" name="robot" min="4" max="4" required>
+                </p>
+
+                <!-- submit sends the form, reset clears all the boxes -->
+                <p>
+                    <input class="form-button" type="submit" value="Submit">
+                    <input class="form-button" type="reset" value="Reset">
+                </p>
+
+            </form>
         </section>
 
     </main>
