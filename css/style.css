@@ -86,7 +86,6 @@ nav a:hover {
 /* The current class highlights the page the visitor is on */
 nav a.current {
     background-color: #C1121F;
-    border-color: #C1121F;
 }
 
 /* ---------- Main content ---------- */
