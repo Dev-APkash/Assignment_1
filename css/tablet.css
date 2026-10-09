@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* ==========================================================
+   tablet.css - Layout for tablets (481px to 960px wide)
+   Linked in the HTML with: media="only screen and (min-width: 481px) and (max-width: 960px)"
+   Content uses two columns where it fits.
+   ========================================================== */
+
+header h1 {
+    font-size: 32px;
+}
+
+/* main takes 90% of the screen width (fluid design) */
+main {
+    width: 90%;
+}
+
+/* Home page boxes: two per row.
+   inline-block puts boxes side by side, vertical-align: top lines up their tops.
+   45% + 2% gap, two times = 94%, which leaves room for the small space between boxes. */
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 2%;
+}
+
+/* About page: the photo floats to the left and the text wraps around it */
+.profile {
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+}

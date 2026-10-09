@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* ==========================================================
+   laptop.css - Layout for laptops and desktops (961px wide or bigger)
+   Linked in the HTML with: media="only screen and (min-width: 961px)"
+   Content uses three columns and the page width is limited so lines are not too long.
+   ========================================================== */
+
+header h1 {
+    font-size: 40px;
+}
+
+/* main takes 80% of the screen width (fluid design),
+   max-width stops it from getting too wide on very big monitors */
+main {
+    width: 80%;
+    max-width: 1100px;
+}
+
+/* Home page boxes: three per row.
+   30% + 2% gap, three times = 96%, which leaves room for the small space between boxes. */
+.box {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 2%;
+}
+
+/* About page: the photo floats to the left and the text wraps around it */
+.profile {
+    float: left;
+    width: 30%;
+    margin-right: 25px;
+}

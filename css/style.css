@@ -60,7 +60,7 @@ nav ul {
     padding: 0;
 }
 
-/* inline-block puts the links side by side (no flexbox needed) */
+/* inline-block puts the links side by side on one line */
 nav li {
     display: inline-block;
     margin: 5px;

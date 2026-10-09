@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* ==========================================================
+   mobile.css - Layout for phones (480px wide or smaller)
+   Linked in the HTML with: media="only screen and (max-width: 480px)"
+   Everything is in one column so it is easy to read and scroll on a small screen.
+   ========================================================== */
+
+/* Smaller name so it fits on a phone screen */
+header h1 {
+    font-size: 26px;
+}
+
+/* Each nav link goes on its own line and fills the width.
+   This makes the links bigger and easier to tap with a finger. */
+nav li {
+    display: block;
+    margin: 5px 0;
+}
+
+/* main uses almost the whole screen on a phone */
+main {
+    width: 95%;
+}
+
+/* Home page boxes: one per row */
+.box {
+    width: 100%;
+}
+
+/* Smaller photo on a phone, it stays centred above the text */
+.profile img {
+    max-width: 200px;
+}
+
+/* Less padding inside the form to save space */
+form {
+    padding: 10px;
+}
