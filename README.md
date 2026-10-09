@@ -100,7 +100,7 @@ I created a five colour scheme in Adobe Color (https://color.adobe.com/create). 
 
 I picked dark navy and red against light aqua and off-white so the text has high contrast and passes the WAVE contrast check.
 
-![Adobe Color scheme](screenshots/adobe-color.png)
+![Adobe Color scheme](screenshots/adobe-color.jpg)
 
 ## Contact Form Validation
 
@@ -122,14 +122,28 @@ The form uses `action="mailto:..."` with `method="post"` and `enctype="text/plai
 | HTML | W3C Markup Validation Service (https://validator.w3.org/) | All 4 pages: 0 errors, 0 warnings |
 | CSS | W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/) | All 4 CSS files: 0 errors, 0 warnings |
 | Links | W3C Link Checker (https://validator.w3.org/checklink) | _(add result)_ |
-| Spelling | _(add tool, e.g. VS Code Code Spell Checker)_ | _(add result)_ |
-| Accessibility | WAVE (https://wave.webaim.org/) | _(add result)_ |
+| Spelling | VS Code - Code Spell Checker (cSpell) extension | All HTML and CSS files: no spelling errors |
+| Accessibility | WAVE (https://wave.webaim.org/) | All 4 pages: 0 errors, 0 contrast errors, AIM score 10/10 (see below) |
+
+**WAVE results by page:**
+
+| Page | Errors | Contrast Errors | Alerts |
+|---|---|---|---|
+| Home | 0 | 0 | 0 |
+| About Me | 0 | 0 | 1 |
+| Projects | 0 | 0 | 0 |
+| Contact Me | 0 | 0 | 0 |
+
+The one alert on the About Me page is "HTML5 video or audio". WAVE shows this alert on any page that has a video, to remind the developer to check for captions. It is not an error.
 
 ![HTML validation](screenshots/html-validation.png)
 ![CSS validation](screenshots/css-validation.png)
 ![Link checker](screenshots/link-checker.png)
 ![Spell check](screenshots/spell-check.png)
-![WAVE](screenshots/wave.png)
+![WAVE - Home](screenshots/wave-home.png)
+![WAVE - About Me](screenshots/wave-about.png)
+![WAVE - Projects](screenshots/wave-projects.png)
+![WAVE - Contact Me](screenshots/wave-contact.png)
 
 ## Sources and Credits
 
