@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* ==========================================================
+   style.css - Main stylesheet shared by all four pages
+   This file has the colours, fonts and the look of each element.
+   The layout for each screen size is in mobile.css,
+   tablet.css and laptop.css.
+   ========================================================== */
+
+/* Colour scheme made with Adobe Color (https://color.adobe.com/create)
+   #1D3557 - Navy       (header, footer, headings and text)
+   #457B9D - Steel Blue (borders)
+   #A8DADC - Aqua       (boxes and footer links)
+   #F1FAEE - Off-White  (page background)
+   #C1121F - Red        (buttons and the current page in the nav)
+*/
+
+/* Makes width include the padding and border, so percentage widths add up correctly */
+* {
+    box-sizing: border-box;
+}
+
+/* The body style applies to everything on the page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F1FAEE;
+    color: #1D3557;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: #1D3557;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Compound style: only the h1 inside the header */
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0 15px 0;
+}
+
+/* ---------- Navigation ---------- */
+
+/* Removes the bullets and the default spacing from the nav list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* inline-block puts the links side by side (no flexbox needed) */
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* display: block makes the whole padded area clickable, like a button */
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Pseudo-class: changes the link colours when the mouse is over it */
+nav a:hover {
+    background-color: white;
+    color: #1D3557;
+}
+
+/* The current class highlights the page the visitor is on */
+nav a.current {
+    background-color: #C1121F;
+    border-color: #C1121F;
+}
+
+/* ---------- Main content ---------- */
+
+/* Fluid design: main takes 90% of the screen width and auto margins centre it */
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1D3557;
+    border-bottom: 3px solid #C1121F;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #1D3557;
+}
+
+/* Boxes on the home page */
+.box {
+    background-color: #A8DADC;
+    border: 2px solid #457B9D;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    margin-top: 0;
+}
+
+/* The button class makes a link look like a button */
+.button {
+    display: inline-block;
+    background-color: #C1121F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #1D3557;
+}
+
+/* The clear class stops float so the next element starts on a new line */
+.clear {
+    clear: both;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #1D3557;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Browsers show address in italics by default, this makes it normal text */
+footer address {
+    font-style: normal;
+}
+
+footer a {
+    color: #A8DADC;
+}
+
+footer p {
+    margin: 5px 0 0 0;
+}
