@@ -121,7 +121,7 @@ The form uses `action="mailto:..."` with `method="post"` and `enctype="text/plai
 |---|---|---|
 | HTML | W3C Markup Validation Service (https://validator.w3.org/) | All 4 pages: 0 errors, 0 warnings |
 | CSS | W3C CSS Validation Service (https://jigsaw.w3.org/css-validator/) | All 4 CSS files: 0 errors, 0 warnings |
-| Links | W3C Link Checker (https://validator.w3.org/checklink) | _(add result)_ |
+| Links | W3C Link Checker (https://validator.w3.org/checklink) | All pages and CSS files checked recursively: 0 broken links. The only item listed is the `mailto:` email link, which the Link Checker does not test ("Access to mailto URIs has been disabled"), so it is not a broken link |
 | Spelling | VS Code - Code Spell Checker (cSpell) extension | All HTML and CSS files: no spelling errors |
 | Accessibility | WAVE (https://wave.webaim.org/) | All 4 pages: 0 errors, 0 contrast errors, AIM score 10/10 (see below) |
 
